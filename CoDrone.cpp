@@ -522,11 +522,12 @@ void CoDroneClass::Send_Control()
 
   //delay(50);
 
-   
-	prevControl[0] = roll;
-	prevControl[1] = pitch;
-	prevControl[2] = yaw;
-	prevControl[3] = throttle;
+   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   // To Fix: What is it used for?
+   prevControl[0] = roll;
+   prevControl[1] = pitch;
+   prevControl[2] = yaw;
+   prevControl[3] = throttle;
   
 	roll = 0;
 	pitch = 0;
@@ -1482,7 +1483,8 @@ void CoDroneClass::Send_Processing(byte _data[], byte _length, byte _crc[])
 }
 
 /***************************************************************************/
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// To Fix: the structure of the logic
 void CoDroneClass::Receive()
 {	
 	if (DRONE_SERIAL.available() > 0)
@@ -2129,7 +2131,8 @@ void CoDroneClass::LinkStateCheck()	//ready or connected ?
 
 /**********************************************************/
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// To Fix: the structure of the logic
 void CoDroneClass::ReceiveEventCheck()
 {
 	// digitalWrite(13,LOW);
